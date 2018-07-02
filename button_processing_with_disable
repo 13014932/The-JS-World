@@ -23,3 +23,37 @@
             
             </script>
 </html> 
+
+
+//roughly change behaviour of add to cart button 
+function change() 
+{
+
+    var elem = document.getElementById("myButton1");
+     elem.value = "Adding...";
+                
+    if(elem.value=="Adding...") 
+    
+    elem.disabled=true;
+    
+    var t=false;
+    if(t==true)
+    setTimeout(function () {
+       elem.value= "Added";
+        }, 700);
+        
+        else if(t==false) 
+        {
+        elem.value = "error in Adding...";
+        setTimeout(function () {
+        elem.disabled=false;
+       elem.value= "Add To Cart";
+        }, 700);
+        
+               
+        };
+    
+ 
+    
+      
+}
