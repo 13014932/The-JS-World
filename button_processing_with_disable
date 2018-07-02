@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input onclick="change()" type="button" value="Add To Cart" id="myButton1"/>
+</body>
+<script>
+ function change() 
+{
+    var elem = document.getElementById("myButton1");
+     elem.value = "Adding...";
+                
+    if(elem.value=="Adding...") 
+    
+    elem.disabled=true;
+    
+    setTimeout(function () {
+       // alert("Item added to cart"); 
+               elem.value= "Added";
+           }, 700);  
+}
+            
+         
+            
+            </script>
+</html> 
