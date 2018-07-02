@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="myFunction()">Try it</button>
+<input type="number" id="num1" >
+<input type="number" id="num2" >
+<input type="number" id="num3" >
+<input type="number" id="num4" >
+
+
+<p id="demo"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+
+var n1=document.getElementById("num1").value;
+var n2=document.getElementById("num2").value;
+var n3=document.getElementById("num3").value;
+var n4=document.getElementById("num4").value;
+
+var a=fruits[n1];
+var b=fruits[n2];
+var c=fruits[n3];
+var d=fruits[n4];
+
+document.getElementById("demo").innerHTML = a+", "+b+", "+c+", "+d;
+  
+    
+}
+</script>
+
+</body>
+</html>
