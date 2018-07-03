@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+    $("#select1").change(function(){
+    
+    $('#img1').attr('src', this.options[this.selectedIndex].value);
+            
+    });
+});
+</script>
+</head>
+<body>
+<img id="img1" src="https://st3.depositphotos.com/1016929/16323/i/1600/depositphotos_163235082-stock-photo-3d-car-white-blank-template.jpg" style="width:150px;height:160px;" alt="My Car">
+
+<select id="select1">
+  <option value="https://media.zigcdn.com/media/model/2016/Jan/volvo_s90_600x300.jpg">Volvo</option>
+  <option  value="https://i.ytimg.com/vi/eDCLH9HRO3E/hqdefault.jpg">Saab</option>
+  <option value="https://auto.ndtvimg.com/car-images/big/mercedes-benz/c-class/mercedes-benz-c-class.jpg?v=7">Mercedes</option>
+  <option value="https://img.gaadicdn.com/images/mycar/large/audi/tt/marketimg/Audi_TT.webp">Audi</option>
+</select>
+
+</body>
+</html>
