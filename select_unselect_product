@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<p>Select products which you want to getTogether :</p>
+
+product 1: <input type="checkbox" id="myCheck"  onclick="myFunction()">
+product 2: <input type="checkbox" id="myCheck2"  onclick="myFunction2()">
+product 3: <input type="checkbox" id="myCheck3"  onclick="myFunction3()">
+product 4: <input type="checkbox" id="myCheck4"  onclick="myFunction4()">
+
+<p id="text" style="display:none">Checkbox is CHECKED!</p>
+
+<span style="display:none" id="img1"> 
+<img  src="https://st3.depositphotos.com/1016929/16323/i/1600/depositphotos_163235082-stock-photo-3d-car-white-blank-template.jpg" height="174" width="174"  alt="My Car"> </span>
+
+<span style="display:none" id="img2">
+<img  src="https://media.zigcdn.com/media/model/2016/Jan/volvo_s90_600x300.jpg" height="174" width="174"  alt="My Car"> </span>
+
+<span style="display:none" id="img3">
+<img  src="https://i.ytimg.com/vi/eDCLH9HRO3E/hqdefault.jpg" height="174" width="174"  alt="My Car"> </span>
+
+<span style="display:none" id="img4">
+<img  src="https://img.gaadicdn.com/images/mycar/large/audi/tt/marketimg/Audi_TT.webp" height="174" width="174"  alt="My Car"> </span>
+
+<script>
+function myFunction() {
+    var checkBox = document.getElementById("myCheck");
+    var text = document.getElementById("img1");
+    if (checkBox.checked == true){
+$("#img1").fadeIn();
+        //text.style.display = "block";      
+    } else {
+       $("#img1").fadeOut();
+      // setTimeout(function(){ text.style.display = "none"; }, 500);
+    }
+}
+function myFunction2() {
+    var checkBox = document.getElementById("myCheck2");
+    var text = document.getElementById("img2");
+    if (checkBox.checked == true){
+    $("#img2").fadeIn();
+        //text.style.display = "block";
+        
+    } else {
+       $("#img2").fadeOut();
+      // setTimeout(function(){ text.style.display = "none"; }, 500);
+    }
+}
+function myFunction3() {
+    var checkBox = document.getElementById("myCheck3");
+    var text = document.getElementById("img3");
+    if (checkBox.checked == true){
+    $("#img3").fadeIn();
+        //text.style.display = "block";
+        
+    } else {
+       $("#img3").fadeOut();
+      // setTimeout(function(){ text.style.display = "none"; }, 500);
+    }
+}
+function myFunction4() {
+    var checkBox = document.getElementById("myCheck4");
+    var text = document.getElementById("img4");
+    if (checkBox.checked == true){
+    $("#img4").fadeIn();
+        //text.style.display = "block";
+        
+    } else {
+       $("#img4").fadeOut();
+      // setTimeout(function(){ text.style.display = "none"; }, 500);
+    }
+}
+</script>
+</body>
+</html>
